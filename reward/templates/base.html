@@ -1,0 +1,49 @@
+{% load static%} 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        {% if title %}
+        <title>Instagram - {{title}}</title>
+        {% else %}
+         <title> Instagram </title>
+         {% endif %}
+
+         {% block styles %}
+          
+          <link rel="stylesheet" href="{% static 'css/basenews.css' %}">
+          <!-- Font Awesome -->
+          <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+          <!-- Bootstrap core CSS -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+          <!-- Material Design Bootstrap -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          {% endblock %}
+
+    </head>
+    <body>
+        {% include "navbar.html"%}
+        {% block content %}
+        {% endblock %}
+
+        {% block scripts %}
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <!-- JQuery -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+     
+    {% endblock %}
+
+        
+        
+    </div>
+    </body>
+</html>
