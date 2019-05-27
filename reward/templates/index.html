@@ -1,23 +1,26 @@
 {%extends 'base.html'%}
-{% load static %}
-{%block content%}
-<body>
-    <div class="container">
-    
-        <div class="row">
-                {%for image in images%}
-            <div class="col-md-6">
-                <div class="card">
-                
-                <p>{{image.image_name}}</p>
-                 <img class="img-fluid" src="{{image.image.url}}" alt="">
-                 
-                </div>
-            </div>
-            {%endfor%}
-        </div>
-      
-    </div>
-     
-    
-{%endblock%}
+
+ {% block content %}
+
+ <div class="container">
+  
+   <div class="row">
+     <img src="{{image.image.url}}"  class="img-responsive" alt="">
+   </div>
+   
+   <div class="row">
+     <h1 class="text-center">{{image.title}}</h1>
+     <p>ajsosssosojo</p>
+   </div>
+
+   <div class="row">
+     {% autoescape on %}
+     {{image.post| safe}}
+    {% endautoescape %}
+
+   </div>
+
+   
+ </div>
+
+ {% endblock %}
