@@ -7,3 +7,6 @@ from django.http import HttpResponse, Http404,HttpResponseRedirect
 def index(request):
 
    return render(request, 'index.html')
+
+
+
