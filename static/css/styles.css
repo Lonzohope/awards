@@ -56,3 +56,8 @@ header,
 h6 {
   line-height: 1.7;
 }
+#hope{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

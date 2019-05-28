@@ -1,26 +1,33 @@
 {%extends 'base.html'%}
-
+{{block.super}
  {% block content %}
-
- <div class="container">
+ <html>
+   <body id="hope" style="background-image:url();background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
   
-   <div class="row">
-     <img src="{{image.image.url}}"  class="img-responsive" alt="">
-   </div>
+          <div class="row">
+            <img src="{{image.image.url}}"  class="img-responsive" alt="">
+          </div>
+          
+          <div class="row">
+            <h1 class="text-center">{{image.title}}</h1>
+            <p></p>
+          </div>
+       
+          <div class="row">
+            {% autoescape on %}
+            {{image.post| safe}}
+           {% endautoescape %}
+       
+          </div>
+       
+          
+        </div>
+       
+     
+   </body>
    
-   <div class="row">
-     <h1 class="text-center">{{image.title}}</h1>
-     <p>ajsosssosojo</p>
-   </div>
+ </html>
 
-   <div class="row">
-     {% autoescape on %}
-     {{image.post| safe}}
-    {% endautoescape %}
-
-   </div>
-
-   
- </div>
 
  {% endblock %}
