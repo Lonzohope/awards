@@ -29,7 +29,7 @@
       <div>
   
         <!-- Title -->
-        <h4 class="card-title font-weight-bold mb-2" style=" font-family: 'Ranga', cursive; font-size: 1.5em ">Major Rotich</h4>
+        <h4 class="card-title font-weight-bold mb-2" style=" font-family: 'Parisienne', cursive; font-size: 2em ">Major Rotich</h4>
         <!-- Subtitle -->
         <!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
   
@@ -56,18 +56,18 @@
         <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
         <div class="votes">
             <p style="font-family: 'Petit Formal Script', cursive; font-size: 2em;">
-              <strong>Likes</strong> <em>{{quote.upVotes}}</em>
+              <strong>Likes</strong><i class="up"></i> <em>{{quote.upVotes}}</em>
             </p>
             <p style="font-family: 'Petit Formal Script', cursive; font-size: 2em;">
-              <strong> Dislikes</strong> <em>{{quote.downVotes}}</em>
+              <strong> Dislikes</strong> <i class="down"></i> <em>{{quote.downVotes}}</em>
             </p>
           </div>
-        <button type="button" class="btn" style="background-color: #e83e8c; color: white;
+        <button id="up" type="button" class="btn" style="background-color: #e83e8c; color: white;
         font-family:  'Cookie', cursive;  margin: 2%; font-size: 1.5em;
-  padding: 5px;" quoteUpVote(quote) >Up Vote</button>
-        <button type="button" class="btn" style="background-color: #e83e8c; color: white;
+  padding: 5px;">Up Vote </button>
+        <button id="down" type="button" class="btn" style="background-color: #e83e8c; color: white;
         font-family: 'Cookie', cursive; margin: 2%; font-size: 1.5em;
-  padding: 5px;"   (click) = quoteDownVote(quote)>Down Vote</button>
+  padding: 5px;" >Down Vote </button>
         
         <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
         <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
