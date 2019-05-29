@@ -54,26 +54,17 @@
         <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to the menu of our restaurant. They come from countries such as Mexico, Argentina, and Spain. Come to us, have a delicious wine and enjoy the juicy meals from around the world.</p>
         <!-- Button -->
         <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
-        <div class="vote roundrect">
-            <div class="increment up"></div>
-            <div class="increment down"></div>
-          
-            <div class="count">4</div>
+        <div class="votes">
+            <p>
+              <strong>Likes</strong> <em>{{quote.upVotes}}</em>
+            </p>
+            <p>
+              <strong>Dislikes</strong> <em>{{quote.downVotes}}</em>
+            </p>
           </div>
-          
-          <div class="vote chev">
-            <div class="increment up"></div>
-            <div class="increment down"></div>
-          
-            <div class="count">0</div>
-          </div>
-          
-          <div class="vote circle">
-            <div class="increment up"></div>
-            <div class="increment down"></div>
-          
-            <div class="count">8</div>
-          </div>
+        <button type="button" class="btn" (click) = quoteUpVote(quote) >Up Vote</button>
+        <button type="button" class="btn" (click) = quoteDownVote(quote)>Down Vote</button>
+        
         <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
         <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
    -->
