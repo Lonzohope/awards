@@ -62,8 +62,12 @@
               <strong>Dislikes</strong> <em>{{quote.downVotes}}</em>
             </p>
           </div>
-        <button type="button" class="btn" (click) = quoteUpVote(quote) >Up Vote</button>
-        <button type="button" class="btn" (click) = quoteDownVote(quote)>Down Vote</button>
+        <button type="button" class="btn" style="background-color: #e83e8c; color: white;
+        font-family: 'Bad Script', 'cursive';  margin: 2%;
+  padding: 5px;" quoteUpVote(quote) >Up Vote</button>
+        <button type="button" class="btn" style="background-color: #e83e8c; color: white;
+        font-family: 'Bad Script', 'cursive';  margin: 2%;
+  padding: 5px;"   (click) = quoteDownVote(quote)>Down Vote</button>
         
         <!-- <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
         <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
